@@ -1,11 +1,13 @@
 import Map from "./components/Map";
+import List from "./components/List";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
+    <Box sx={{display:"flex", justifyContent:"space-between"}}>
+       <List/>
        <Map/>
-       <div>hello</div>
-    </div>
+    </Box>
   );
 }
 
